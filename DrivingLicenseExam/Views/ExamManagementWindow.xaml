@@ -38,6 +38,7 @@
 
                         <Button
                             Content="Thêm mới bài thi"
+                            Command="{Binding OpenAddCommand}"
                             Margin="5" />
                     </StackPanel>
 

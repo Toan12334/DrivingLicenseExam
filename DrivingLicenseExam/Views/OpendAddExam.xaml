@@ -19,12 +19,12 @@
             <Slider Width="200"
                Minimum="0"
               Maximum="300"
-              Value="{Binding TimeExam , Mode=TwoWay}" />
+              Value="{Binding Exam.TimeLimit , Mode=TwoWay}" />
               
           
 
             
-                <Button Content="Thêm Bài Thi" Width="100" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" Click="AddExamButton_Click"/>
+                <Button Command="{Binding AddExamCommand}" Content="Thêm Bài Thi" Width="100" Height="30" Margin="0,20,0,0" HorizontalAlignment="Center" />
             </StackPanel>
         
     </Grid>

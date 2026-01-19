@@ -31,10 +31,7 @@
                     Width="80"
                     Command="{Binding DeleteCommand}"/>
 
-            <Button Content="Hủy"
-                    Width="80"
-                    Margin="8,0,0,0"
-                    Command="{Binding CancelCommand}"/>
+
         </StackPanel>
 
         <!-- MAIN CONTENT -->

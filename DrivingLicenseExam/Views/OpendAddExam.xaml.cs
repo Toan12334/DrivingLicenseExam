@@ -1,5 +1,7 @@
-﻿using System;
+﻿using DrivingLicenseExam.DTO;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using DrivingLicenseExam.ViewModels;
 namespace DrivingLicenseExam.Views
 {
     /// <summary>
@@ -19,9 +21,12 @@ namespace DrivingLicenseExam.Views
     /// </summary>
     public partial class OpendAddExam : Window
     {
-        public OpendAddExam()
+        public OpendAddExam(ObservableCollection<ExamDTO> ExamList)
         {
             InitializeComponent();
+            DataContext = new ViewModels.AddExamViewModel(ExamList);
         }
+
+       
     }
 }
